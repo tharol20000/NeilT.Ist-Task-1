@@ -1,14 +1,33 @@
-h1{
-    font-size: large;
+header{ 
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
 }
-header{
-    align-content: center;
-    margin: auto ;
-}
+
 header img{
- border-radius: 10000px;
+    display: block;
+    margin: 0 auto 0 auto;
 }
-img {
-    max-width: 100%;
-    height: auto;
-  }
+
+body {
+    -webkit-animation: colorchange 60s infinite;  
+    animation: colorchange 60s infinite;  
+}
+
+@-webkit-keyframes colorchange {
+    0%  {background: #33ccff;}
+   25%  {background: #ff99ff;}
+   50%  {background: #9900ff;}
+   75%  {background: #6666ff;}
+   100% {background: #3366ff;}
+}
+
+@keyframes colorchange {
+    0%  {background: #3399ff;}
+   25%  {background: #cc99ff;}
+   50%  {background: #cc33ff;}
+   75%  {background: #6666ff;}
+   100% {background: #3399ff;}
+}   
+
+
