@@ -1,15 +1,19 @@
 const loader = document.querySelector('.loader');
-const main = document.querySelector('.main');
-const more = document.querySelector('.more');
+const navbar = document.querySelector('.navbar');
+const image = document.querySelector('.image');
+const subjects = document.querySelector('.subjects');
+const interests = document.querySelector('.interests');
 
 function init() {
   setTimeout(() => {
     loader.style.opacity = 0;
     loader.style.display = 'none';
 
-    main.style.display = 'block';
-    more.style.display = 'block';
-    setTimeout(() => (main.style.opacity = 1,more.style.opacity = 1), 50);
+    image.style.display = 'block';
+    navbar.style.display = 'block';
+    subjects.style.display = 'block';
+    interests.style.display = 'block';
+    setTimeout(() => (image.style.opacity = 1,navbar.style.opacity = 1, subjects.style.opacity = 1, interests.style.opacity = 1 ), 50);
   }, 4000);
 }
 
