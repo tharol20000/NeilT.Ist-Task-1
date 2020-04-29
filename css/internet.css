@@ -7,6 +7,11 @@
     box-sizing: border-box;
     
 }
+.navbar {
+    opacity: 0;
+    display: none;
+    transition: opacity 2s ease-in;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -91,4 +96,97 @@ nav{
         transform: translateX(0px);
     }
 }
+a:hover {
+    color: crimson;
+}   
 /* navbar css end */
+body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.column {
+    float: left;
+    width: 24.79%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    margin: 2px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+.containerTab {
+    padding: 20px;
+    color: white;
+}
+
+.containerTab h2 {
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+.containerTab p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.image {
+    opacity: 0;
+    display: none;
+    transition: opacity 2s ease-in;
+}
+.image img {
+    width: 24.84%;
+    max-height: 170px;
+    margin: 0;
+}
+
+.image h1 {
+    font-family: 'Lexend Giga';
+    padding: 10px;
+    text-align: center;
+}
+.AAAAAAAAAAAAAAA img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.popout {
+    opacity: 0;
+    display: none;
+    transition: opacity 2s ease-in;
+}
+.popout p {
+    font-size: 20px;
+}
+
+.popout h2 {
+    font-size: 35px;
+}
+
+.AAAAAAAAAAAAAAA {
+    opacity: 0;
+    display: none;
+    transition: opacity 2s ease-in;
+}
+
+.loader { 
+    width: 50px;
+    position: fixed;
+    left: calc(50vw - 25px);
+    top: calc(50vh - 25px);
+ }

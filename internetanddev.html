@@ -5,28 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/internet.css">
+    <link rel="stylesheet" type="text/css" href="css/loader1.css">
     <title>About me</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <h4>The Nav</h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">About</a></div></li>
-            <li><a href="#">Internet and Development</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Programming</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <section class="navbar">
+        <nav>
+            <div class="logo">
+                <h4>The Nav</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></div></li>
+                <li><a href="#">Internet and Development</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="programming.html">Programming</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </section>
     
-    <script src="js/navabout.js"></script>
+    <section class="image">
+        <h1>Internet and Devlopment:The Questions</h1>
+        <img src="img/www.jpg" alt="World Wide Web">
+        <img src="img/internet.jpg" alt="Internet">
+        <img src="img/net.jpg" alt="Net">
+        <img src="img/globe.jpg" alt="globe">
+    </section>
+    <section class="popout">
+        <!-- Three columns -->
+        <div class="row">
+            <div class="column" onclick="openTab('b1');" style="background:#5D4954;">
+                Question 1
+            </div>
+            <div class="column" onclick="openTab('b2');" style="background:#5D4954;">
+                Question 2
+            </div>
+            <div class="column" onclick="openTab('b3');" style="background:#5D4954;">
+                Question 3
+            </div>
+            <div class="column" onclick="openTab('b4');" style="background:#5D4954;">
+                Question 4
+            </div>
+        </div>
+        
+        <!-- Full-width columns: (hidden by default) -->
+        <div id="b1" class="containerTab" style="display:none;background:#5D4954">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Question 1. Intro to the World Wide Web</h2>
+            <p>The web is a huge system of connected hypertext documents that are stored on powerful computers called web servers, and can be accessed by software called web browsers such as Google Chrome, Safari and Microsoft Edge (tell me i'm wrong but the new edge is better than chrome).
+                
+                To put it in context, when you open up your web browser and search for something or put a link in the search bar, your web browser asks a web server far away, do you know this website and can you give it to me. This document is the web page itself. Sometimes when you put in the wrong link you may get an error. That is the not found error. It is when the web server tells the browser that it cannot find the webpage. 
+                
+                Every website has its own unique URL. The web server will store both the Url and document so when you call for it it will show up. The web browser basically connects to the web servers to get you asked for. Your computer will get the hypertext document, read it out super fast and spit it onto your screen, even with the styling that makes everything look good. 
+            </p>
+        </div>
+        
+        <div id="b2" class="containerTab" style="display:none;background:#5D4954">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Question 2. How is it different to the Internet?</h2>
+            <p>The world wide web is a massive system of documents but the internet is a huge system of millions of computers from all across the world. It connects computers that are connected to it to each other. Your computer is able to show hypertext documents because of the internet. The internet is the path the document takes from the web server to your computer. The World Wide Web is only possible because of the internet.</p>
+        </div>
+        
+        <div id="b3" class="containerTab" style="display:none;background:#5D4954">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Question 3. Intranet and relate it to the internet</h2>
+            <p>An intranet is a private network that is owned by a certain company. The company’s employees have access to the intranet and it allows to them to collaborate, communicate and get informed on matters relating to the company. It can be a website or computers that are connected on the company’s network. Each company's intranet will be different according to their objectives, structure and what they do, but they all have elements in common. These include; a system that holds and manages confidential or necessary information and documents so that the employees can access them; a way for employees to communicate with each other, especially if they are far in physical distance, forums and discussion areas that can enable employees to ask questions to a wide audience, get reliable answers, and give answers of their own to inform others; and specific forms or transactions that can be completed online such as booking holidays. The difference between the internet and the intranet is that the intranet is on a much smaller scale than the internet. The internet can be accessed by anyone whereas the intranet can only be accessible to employees of a business usually through a special login and password. On the internet anyone can request access to any document while the intranet only people with a login can access it. It is much safer than the internet. </p>
+        </div>
+        
+        <div id="b4" class="containerTab" style="display:none;background:#5D4954">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Question 4. What is an internet protocol? Compare HTTP, ICP/IP and FTP</h2>
+            <p>Internet Protocol is the procedure in which through data is sent from one computer to another across the internet. Every single computer, phone and device that can connect to the internet has its very own unique 32-digit IP Address that distinguishes it from every other device on the internet  and that allows for it to be easily found so that data can be transferred to or from it. 
+                
+                HTTP (Hyper Text Transfer Protocol)  is a type of Internet Protocol, something on your computer makes a request with a server to which the server acknowledges and responds.. It is optimal for transferring hypertext documents across systems.
+                
+                TCP (Transmission Control Protocol) is a transport protocol which means it dictates the method by which data is received and transferred to places. It sends the data in smaller portions called packets which are reassembled at its destination. Each packet has an IP Address which helps it travel through systems until it reaches its destination. TCP first connects with the destination of the data and then sends all the packets, of which the recipient will acknowledge. If the recipient does not acknowledge a packet, TCP sends it again, and since TCP/IP has to wait for every package to be sent and received, it can take a longer time. TCP is optimal for reliability, but not speed. It is also the most popular protocol.
+                
+                FTP (File Transfer Protocol) allows an user to transfer files from one device to another device. You can download and upload many different types of files, for example, pictures, documents, there are many more. Websites that have applications that you can download typically use this protocol. 
+                
+                All these protocols are used for different things; HTTP to send HTML files; TCP/IP to transport the data; and FTP to download and upload data, and they are necessary for certain things when accessing the world wide web through the internet
+            </p>
+        </div>
+    </section>
+    <section class="AAAAAAAAAAAAAAA">
+        <img src="img/AAAAAAAAAAAAAA.jpg" alt="AAAAAAAAAAAA">    
+    </section> 
+    <script src="js/navbar.js"></script>
+    <script src="js/internetloader.js"></script>
+    <script>
+        function openTab(tabName) {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
     
 </body>
 </html>
